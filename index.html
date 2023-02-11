@@ -5,45 +5,114 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My favourite restaurant</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <style>
+      h1 {
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <h1>Tibits</h1>
-    <img
-      src="https://www.tibits.ch/assets/images/c/tibits_Pancakes-2-5762ebd7.jpg"
-      width="25%"
-    />
-    <img
-      src="    https://www.tibits.ch/assets/images/c/TNN_6142-9289bc41.jpg"
-      width="25%"
-    />
-    <p>
-      Tibits is a vegetarian restaurant I discovered when I moved to
-      Switzerland. Unlike a traditional restaurant where you come and order
-      food, it works with a buffet concept, so you come, choose your food and
-      can either have it inside or order to take away. Unlike some buffets I
-      have been to before, in Tibits food always tastes fresh and delicious.
-      Tibits claims "We value cooking with fresh, natural products. tibits
-      treats are glutamate-free, without artificial additives and free of
-      genetically modified foods. All baked goods, dairy products and free-range
-      eggs are of organic or Demeter quality." I can attest. On top of that,
-      food is amazingly healthy, and time-demanding to cook. Last but no least,
-      the decoration full of plants and cozy is very inviting. I always love my
-      visits to Tibits.
-    </p>
-    <button>Reserve a table</button>
+    <div class="container">
+      <h1>Tibits</h1>
 
-    <h2>Menu Box</h2>
-    <p>Pictures of Menu</p>
+      <div id="carousel" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://www.tibits.ch/assets/images/f/tibits_LausanneSalles-12-aaeb4034.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.tibits.ch/assets/images/c/TNN_6142-9289bc41.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.tibits.ch/assets/images/1/power_greens-50b2fde7.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br />
+      <p>
+        Tibits is a vegetarian restaurant I discovered when I moved to
+        Switzerland.
+      </p>
+      <p>
+        Unlike a traditional restaurant where you come and order food, it works
+        with a buffet concept. You come, choose your food and can either have it
+        inside or order to take away.
+      </p>
 
-    <h2>Locations</h2>
-    <p>Box with locations</p>
+      <p>
+        Unlike some buffets I have been to before, in Tibits food always tastes
+        fresh and delicious. Tibits claims "We value cooking with fresh, natural
+        products. tibits treats are glutamate-free, without artificial additives
+        and free of genetically modified foods. All baked goods, dairy products
+        and free-range eggs are of organic or Demeter quality." I can attest.
+      </p>
+      <p>
+        On top of that, food is amazingly healthy, and time-demanding to cook.
+        Last but no least, the decoration full of plants and cozy is very
+        inviting. I always love my visits to Tibits.
+      </p>
 
-    <a href="https://www.tibits.ch/de/restaurants/standorte"
-      >Check Tibits locations if you happen to be in Switzerland</a
-    >
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+      <img
+        src="https://www.tibits.ch/assets/images/c/tibits_Pancakes-2-5762ebd7.jpg"
+        width="25%"
+      />
+      <img
+        src="    https://www.tibits.ch/assets/images/c/TNN_6142-9289bc41.jpg"
+        width="25%"
+      />
 
+      <button>Reserve a table</button>
+
+      <h2>Menu Box</h2>
+      <p>Pictures of Menu</p>
+
+      <h2>Locations</h2>
+      <p>Box with locations</p>
+
+      <a href="https://www.tibits.ch/de/restaurants/standorte"
+        >Check Tibits locations if you happen to be in Switzerland</a
+      >
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
