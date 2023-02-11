@@ -15,54 +15,71 @@
       h1 {
         text-align: center;
       }
+
+      .px-wide {
+        display: block;
+        margin: 0 auto;
+        width: 600px;
+      }
     </style>
   </head>
   <body>
-    <div class="container">
+    <div class="container-md">
       <h1>Tibits</h1>
 
-      <div id="carousel" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="https://www.tibits.ch/assets/images/f/tibits_LausanneSalles-12-aaeb4034.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
+      <div class="px-wide">
+        <div id="carousel" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://www.tibits.ch/assets/images/f/tibits_LausanneSalles-12-aaeb4034.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p>Healthy</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://www.tibits.ch/assets/images/c/TNN_6142-9289bc41.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p>Organic</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://www.tibits.ch/assets/images/1/power_greens-50b2fde7.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p>Vegan</p>
+              </div>
+            </div>
           </div>
-          <div class="carousel-item">
-            <img
-              src="https://www.tibits.ch/assets/images/c/TNN_6142-9289bc41.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="https://www.tibits.ch/assets/images/1/power_greens-50b2fde7.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
       <br />
       <p>
