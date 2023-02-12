@@ -14,7 +14,6 @@
     <style>
       body {
         color: black;
-        background-color: white;
       }
       h1 {
         text-align: center;
@@ -23,8 +22,12 @@
 
       footer {
         text-align: center;
+        margin-bottom: 10px;
       }
 
+      .page-container{
+        background-color: #A1B95B
+      }
       .logo{
         display: block;
         margin: 0 auto;
@@ -37,11 +40,14 @@
        border-color: black;
        margin-top: 10px;
        margin-bottom: 10px;
+       border-radius: 4px;
+
       }
+
     </style>
   </head>
   <body>
-    <div class="container">
+    <div class="page-container">
     <div class="header">
     <img class= "logo" src="https://www.tibits.ch/tl_files/site/img/site-header-logo.png">
     </div>    
@@ -118,7 +124,7 @@
           <div class="col-auto">
             <div class="card" style="width: 18rem">
               <img
-                src="https://www.tibits.ch/assets/images/c/tibits_Pancakes-2-5762ebd7.jpg"
+                src="https://scontent-zrh1-1.xx.fbcdn.net/v/t1.6435-9/104169379_10158193674595822_7086133672236829285_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=2c4854&_nc_ohc=_9tAVdKS_40AX-zbZ-e&_nc_ht=scontent-zrh1-1.xx&oh=00_AfBNCHFhSusAbRCwN0vg5h7UanLeqD4UkDQrENIQtQYXhw&oe=6410B785"
                 class="card-img-top"
                 alt="..."
               />
@@ -184,13 +190,71 @@
             <a
               href="https://www.tibits.ch/en/book-a-table"
               class="btn btn-success"
-              >Book a table</a
-            >
-         
-        <br>
+              >Book a table</a>
+       
+
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#eventModal">
+  Tell us more about your event
+</button>
+
+<div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Let's celebrate together 🎉</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<form>
+   <div class="mb-3">
+  <label for="FirstName" class="form-label">First Name</label>
+    <input type="text" class="form-control" id="FirstName" >
+  </div>
+  <div class="mb-3">
+  <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" >
+  </div>
+  <div class="mb-3">
+    <label for="CompanyName" class="form-label">Company Name</label>
+    <input type="text" class="form-control" id="CompanyName">
+  </div>
+    <div class="mb-3">
+    <label for="eventDate" class="form-label">Event Date</label>
+    <input type="Date" class="form-control" id="eventDate">
+  </div>
+    <div class="mb-3">
+    <label for="groupSize" class="form-label">Group Size</label>
+    <input type="number" class="form-control" id="groupSize">
+  </div>
+    <div class="mb-3">
+    <label for="PhoneNumber" class="form-label">Phone Number</label>
+    <input type="number" class="form-control" id="PhoneNumber">
+  </div>
+
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="Vegetarian">
+    <label class="form-check-label" for="Vegetarian">Vegetarian Menu</label>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="Vegan">
+    <label class="form-check-label" for="Vegan">Vegan Menu</label>
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-success">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <br>
+
         <footer>coded with 💜 by Ornella Amichetti</footer>
       </div>
     </div>
+    <script src="src/index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
