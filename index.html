@@ -197,7 +197,7 @@
   Tell us more about your event
 </button>
 
-<div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="eventModal" tabindex="-1"  aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -205,7 +205,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-<form>
+<form id="eventcontactForm">
    <div class="mb-3">
   <label for="FirstName" class="form-label">First Name</label>
     <input type="text" class="form-control" id="FirstName" >
@@ -242,8 +242,8 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-success">Send</button>
-        </form>
+        <button type="submit" class="btn btn-success" id="submitEventModal">Send</button>
+ </form>
       </div>
     </div>
   </div>
@@ -254,6 +254,19 @@
         <footer>coded with 💜 by Ornella Amichetti</footer>
       </div>
     </div>
+<script>
+
+function thankyouMessage() {
+  alert("Thank you, we will be in touch with you soon!")
+};
+
+let eventcontactFormElement = document.querySelector("#eventModal")
+eventcontactFormElement.addEventListener("submit", thankyouMessage)
+
+
+</script>
+
+
     <script src="src/index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
